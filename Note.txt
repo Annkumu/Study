@@ -1,0 +1,97 @@
+	vue组件化编码
+		使用vue-li创建模板项目
+			说明
+				1）vue-cli是官方提供的脚手架工具
+				2）作用：下载模板项目
+		创建vue项目
+				npm install -g vue-cli
+				vue init webpack vue_demo
+				cd vue_demo
+				npm install
+				npm run dev
+
+	App.vue--模板 
+		
+		<template>
+			<div>
+				<p>{{msg}}</p>
+			</div>
+		</template>
+				
+		<scripte>
+		
+			export default{//配置对象（）
+			}
+		</scripte>
+		
+		<style>
+		
+		</style>
+		
+	打包发布项目
+		npm run build
+		
+	发布1.使用静态服务器工具包
+		npm install -g serve
+			访问：http：//localhost：5000
+	发布2.使用动态web服务器（tommcat）
+		修改配置：webpack.prod.conf.js
+			output:{
+				publicPath:'/xxx/' //打包文件夹名称
+			}
+			改名称后要重新打包 
+			
+	eslint(代码规范）
+	
+	个人笔记
+		入口：main.js
+		主要文件App.vue
+		组件文件夹components
+		
+		1)template标签里面放置静态页面
+		2）script标签分为（App.vue）
+					1>引入组件
+					2>	声明组件属性
+						将组件映射为标签（方便与将组件加入template便签页面中）
+							（其中以Todoheader组件为例，注入template也可以写为todo-header
+							（main.js)
+					1>导入Vue和App.vue
+					2>Vue实例化
+		3）styele标签里面放置css
+	
+		.eslintignore文件：说忽略规范的文件（需配置）
+		
+		自定义事件
+			v-on绑定事件
+			
+		消息订阅与发布
+			npm install --save pubsub-js
+			
+		组件通信：slot
+		
+		vue ajax
+		vue--resource下载
+		npm install vue-resource --save
+		
+		axios 下载
+			npm install axios --save
+			
+vue UI组件库
+		1）Mint UI 移动端
+		2）Elment pc端
+
+				1.下载
+					npm install --save mint-ui
+				2.实现按需打包
+					npm install --save babel-plugin-component
+					改配置
+					.babelrc中的pulgin:["component", [
+										  {
+										 "libraryName": "mint-ui",
+										  "style": true
+										  }
+										  ]
+		mint-ui组件分类
+			1.便签组件
+			2.非标签组件
+			
