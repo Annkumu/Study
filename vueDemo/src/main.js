@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import {Button} from 'mint-ui'
+import router from './router'
 
-//注册标签（全局）
-Vue.component('mt-button',Button)
-
-new Vue({
+new Vue({ //配置对象的属性名都是一些对象的属性名，不能随便修改
     el:'#app',
     components:{App},
-    template:'<App/>'
+    template:'<App/>',
+    router
 })

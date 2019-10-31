@@ -95,3 +95,28 @@ vue UI组件库
 			1.便签组件
 			2.非标签组件
 			
+vue  路由
+		 下载vue-router
+		 
+	相关api说明
+		1）VueRouter：用于创建路由器的构建函数
+			new Router（{
+			//多个配配置项
+			}）
+		2)路由配置
+				routes:{
+				//一般路由
+				}
+		
+		优化路由配置
+		linkActiveClass:'active',//指定选中路由链接的class
+		
+		总结：编写使用路由3步
+			1）定义路由
+			2）注册路由
+			3）使用路由
+			<router-link>
+			<router-view>
+			
+	嵌套路由
+				

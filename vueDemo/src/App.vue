@@ -1,16 +1,35 @@
 <template>
-<mt-button type="primary" @click.native="handleClick" style="width:100%">Test</mt-button>
+<div>
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-8">
+            <div class="page-header"><h2>Router Base -01</h2></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2">
+            <div class="list-group">
+                <router-link to="/about" class="list-group-item">About</router-link>
+                <router-link to="/home" class="list-group-item">Home</router-link>
+                <!-- <div class="list-group"><a href="#/about" class="list-group-item router-link-exact-active activeClass">About</a></div>
+                <a href="#/home" class="list-group-item">Home</a> -->
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <router-view></router-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
-import { Toast } from 'mint-ui'
+
 
 export default {
-  methods:{
-    handleClick () {
-      Toast('提示信息')
-      }
-    }
+
 }
 </script>
 
