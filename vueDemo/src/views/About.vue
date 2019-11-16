@@ -1,12 +1,18 @@
 <template>
   <div>
-      About
+      <h2>About</h2>
+      <p>{{msg}}</p>
+      <input type="text" name="" id="">
   </div>
 </template>
 
 <script>
-export default {
+// window.location = url 跳转页面
 
+export default {
+  props:{
+    msg:String
+  }
 }
 </script>
 

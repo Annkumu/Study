@@ -1,0 +1,32 @@
+gshop
+1.搭建vue脚手架，运行项目
+2.引用阿里矢量图标
+3.项目源码目录设计
+src
+	api //与后台交互模块文件夹
+	common //通用资源文件夹，如fonts/img/style
+	components//非路由组件文件夹
+	filters//自定义过滤器模块文件夹
+	mock//模拟数据接口文件夹
+	pages//路由组件文件夹
+	router//路由器文件夹
+	store//vuex相关模块文件夹
+		APP.vue 应用组件
+		main.js 入口js
+4.安装stylus依赖包
+	npm install stylus stylus-loader --save-dev
+		stylus 将stylus转换成css
+		stylus-loader 让webpack理解stylus
+5.stylus语法
+	结构化
+		.tab
+			display:flex
+		.tab-item
+			with 0
+			flex 1
+	父级引用
+		使用字符&指向夫选择器
+	变量
+	混合
+	导入
+	
